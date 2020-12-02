@@ -1,5 +1,6 @@
 /* globals */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+@font-face { font-family: "Poppins"; src: url("../assets/Poppins-Bold.ttf") format("truetype"); }
 
 :root {
 
@@ -50,10 +51,48 @@ header .left h1 {
 
     margin-left: 1em;
     font-size: 2rem;
-    color: var(--text-color);
+    color: #c2bbe7;
+    font-family: "Poppins";
+    transition: 0.3s ease-in-out;
 }
 
+header .left h1:hover { color: white; }
 
+header form {
+
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+header form input[type="text"] {
+
+    background: rgba(0,0,0,0.3);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 0 20px;
+    color: white;
+}
+
+header form input[type="text"]::placeholder {
+
+    color: #585858;
+    font-weight: bolder;
+}
+
+header form input[type="submit"] { display: none; }
+
+header form svg {
+
+    width: 80px;
+    height: 30px;
+    fill: #6e649e;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+header form svg:hover { fill: white; }
 
 
 
