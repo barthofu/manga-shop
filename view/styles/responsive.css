@@ -4,3 +4,39 @@
         height: 150px;
     }
 }
+
+@media (max-width: 720px) {
+
+    header {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        transition: 0.3s ease-in-out;
+    }
+
+    header form {
+
+        margin-top: 2vh;
+    }
+
+    header .left {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header .left img {
+        width: 0px
+    }
+
+}
+
+
+@media (max-width: 335px) {
+
+    header .left h1 { font-size: 1rem; }
+    
+    .promotions ul { margin-top: 5vh; }
+}

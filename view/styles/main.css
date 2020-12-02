@@ -1,6 +1,8 @@
 /* globals */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
 @font-face { font-family: "Poppins"; src: url("../assets/Poppins-Bold.ttf") format("truetype"); }
+@font-face { font-family: "PoppinsExtraLight"; src: url("../assets/Poppins-ExtraLight.ttf") format("truetype"); }
+
 
 :root {
 
@@ -31,7 +33,7 @@ header {
     z-index: 1;
 
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
 }
@@ -49,7 +51,7 @@ header img {
 
 header .left h1 {
 
-    margin-left: 1em;
+    padding: 0 1em;
     font-size: 2rem;
     color: #c2bbe7;
     font-family: "Poppins";
@@ -85,8 +87,9 @@ header form input[type="submit"] { display: none; }
 
 header form svg {
 
-    width: 80px;
+    width: 30px;
     height: 30px;
+    margin-left: 15px;
     fill: #6e649e;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -119,13 +122,12 @@ header form svg:hover { fill: white; }
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .promotions ul {
 
     margin-top: -10vh;
-    width: 40vw;
+    width: clamp(300px, 40vw, 1500px);
     display: flex;
 }
 
@@ -136,20 +138,32 @@ header form svg:hover { fill: white; }
     width: 100%;
     opacity: 0.3;
     z-index: -1;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
 }
 
-.promotions li#selected img { opacity: 1; }
+.promotions li#selected img { 
+    opacity: 1; 
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+}
+
+.promotions li:not(#selected) .text {
+    font-size: 0.7vw;
+}
 
 .promotions li#selected {
     z-index: 1;
     transform: scale(1.2);
 }
 
-.promotions li#selected .text { color: rgba(255, 255, 255, 1); }
+.promotions li#selected .text { 
+    font-size: clamp(0.5rem, 1vw, 4rem);
+    color: rgb(231, 231, 231); 
+}
 
 .promotions .text {
     text-align: center;
     color: rgb(255, 255, 255, 0.3);
+    font-family: "PoppinsExtraLight";
 }
 
 
