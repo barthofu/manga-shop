@@ -38,6 +38,12 @@ header {
 header .left {
 
     display: flex;
+    align-items: center;
+}
+
+header img {
+
+    width: 60px;
 }
 
 header .left h1 {
@@ -47,19 +53,7 @@ header .left h1 {
     color: var(--text-color);
 }
 
-header ul {
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header ul li a {
-
-    font-size: 1rem;
-    padding: 0.5em 1em;
-    color: var(--text-color);
-}
 
 
 
@@ -70,7 +64,6 @@ header ul li a {
 
 .hero-banner {
 
-    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -81,10 +74,45 @@ header ul li a {
 
 .promotions {
 
-    background-color: rgb(113, 113, 214);
+    background-color: rgb(47, 32, 80);
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.promotions ul {
+
+    margin-top: -10vh;
+    width: 40vw;
+    display: flex;
+}
+
+.promotions li { width: 100%; }
+
+.promotions li img {
+
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.promotions li#selected img { opacity: 1; }
+
+.promotions li#selected {
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+.promotions li#selected .text { color: rgba(255, 255, 255, 1); }
+
+.promotions .text {
+    text-align: center;
+    color: rgb(255, 255, 255, 0.3);
+}
+
 
 /* partie css de la vague, le tout généré via https://www.shapedivider.app */
 
@@ -103,7 +131,7 @@ header ul li a {
     height: 150px;
 }
 
-.custom-shape-divider .shape-fill { fill: #ffffff; }
+.custom-shape-divider .shape-fill { fill: #3a3166; }
 
 
 
