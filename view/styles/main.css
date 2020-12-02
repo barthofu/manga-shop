@@ -1,0 +1,109 @@
+/* globals */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+
+:root {
+
+    --text-color: whitesmoke;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    font-family: Monterrat, sans-serif;
+
+}
+
+/* ============================================================================================================= 
+                                                HEADER
+   ============================================================================================================= */
+
+header {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header .left {
+
+    display: flex;
+}
+
+header .left h1 {
+
+    margin-left: 1em;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+header ul {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li a {
+
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    color: var(--text-color);
+}
+
+
+
+
+/* ============================================================================================================= 
+                                            HERO BANNER
+   ============================================================================================================= */
+
+.hero-banner {
+
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Promotions */
+
+.promotions {
+
+    background-color: rgb(113, 113, 214);
+    height: 100%;
+    width: 100%;
+}
+
+/* partie css de la vague, le tout généré via https://www.shapedivider.app */
+
+.custom-shape-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-shape-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider .shape-fill { fill: #ffffff; }
+
+
+
