@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+@font-face { font-family: "Poppins"; src: url("../assets/Poppins-Bold.ttf") format("truetype"); }
+@font-face { font-family: "PoppinsExtraLight"; src: url("../assets/Poppins-ExtraLight.ttf") format("truetype"); }
+
+body {
+
+    background: rgb(47, 32, 80);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: Monterrat, sans-serif;
+}
+
+.search-text {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-text h1 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: clamp(60px, 5vw, 200px);
+    font-weight: 700;
+    line-height: 3vw;
+    color: #3a2b5c;
+    padding-right: 10rem;
+}
+
+.search-text h2 {
+
+    align-self: center;
+    font-size: clamp(18px, 2.5vw, 60px);
+    color: rgb(175, 175, 175);
+    padding-left: 10rem;
+    max-width: 80%;
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: #3a2b5c;
+    border-radius: 10px;
+    box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
+}
+

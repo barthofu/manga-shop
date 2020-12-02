@@ -13,7 +13,6 @@ body {
 
     display: flex;
     justify-content: center;
-    align-content: center;
     flex-direction: column;
 
     font-family: Monterrat, sans-serif;
@@ -26,16 +25,12 @@ body {
 
 header {
 
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
+    background:  rgb(47, 32, 80);
 }
 
 header .left {
@@ -126,7 +121,7 @@ header form svg:hover { fill: white; }
 
 .promotions ul {
 
-    margin-top: -10vh;
+    margin-top: -30vh;
     width: clamp(300px, 40vw, 1500px);
     display: flex;
 }
