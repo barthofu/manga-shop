@@ -17,6 +17,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-top: 20vh;
 }
 
 .search-text h1 {
@@ -129,6 +130,11 @@ body {
     .search-text {
 
         margin-top: 3rem;
+    }
+
+    .search-text {
+
+        margin-top: 20vh;
     }
 }
 
