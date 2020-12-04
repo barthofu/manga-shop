@@ -27,7 +27,7 @@ body {
 
 .details h1 {
 
-    font-size: clamp(1rem, 2vw, 3rem);
+    font-size: clamp(2rem, 2vw, 3rem);
     line-height: 150%;
     color: rgb(185, 185, 185);
 }
@@ -55,7 +55,7 @@ body {
 .group p {
 
     margin-left: 3rem;
-    font-size: 1.5rem;
+    font-size: font-size: clamp(1rem, 3vw, 3rem);
     color: rgb(194, 194, 194);
 }
 
@@ -128,3 +128,104 @@ body {
 }
 
 
+/* ============================================================================================================= 
+                                            COMMENTAIRES
+   ============================================================================================================= */
+
+.comments {
+
+    width: 80%;
+    margin-top: 10vh;
+}
+
+.comments ul li {
+
+    margin-top: 3vh;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 20px;
+}
+
+.comments ul li h1 {
+
+    line-height: 200%;
+    color: #a3d6a3;
+}
+
+.comments ul li p:last-child {
+
+    line-height: 300%;
+    font-style: italic;
+    color: #d6d6d6;
+}
+
+/* ============================================================================================================= 
+                                            AJOUTER UN COMMENTAIRE
+   ============================================================================================================= */
+
+.sep {
+
+    height: 7px;
+    width: 20vw;
+    margin-top: 5vh;
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 50px;
+}
+
+.add-comment {
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.add-comment textarea {
+
+    width: 40vw;
+    height: 15vh;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+
+    background-color: rgba(0,0,0,0.15);
+    border: none;
+
+    font-size: clamp(1rem, 2vw, 3rem);
+    color: white;
+}
+
+.add-comment textarea:focus { outline: none; }
+
+.add-comment textarea::placeholder { font-size: clamp(1rem, 2vw, 3rem); } 
+
+
+/* ============================================================================================================= 
+                                            RESPONSIVE
+   ============================================================================================================= */
+
+@media (max-width: 724px) {
+
+    .details {
+        margin-top: 20vh;
+    }
+
+    .details h1 {
+
+        font-size: clamp(1rem, 2vw, 3rem);
+    }
+
+    .group {
+
+        flex-direction: column;
+    }
+
+    .group p {
+
+        margin-top: 5vh;
+    }
+
+    .add-to-cart {
+
+        width: 50%;
+    }
+    
+}
