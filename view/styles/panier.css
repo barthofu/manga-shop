@@ -71,7 +71,7 @@ body {
 
 .cart-list li h1 {
 
-    font-size: clamp(0.5rem, 2vw, 2.5rem);
+    font-size: clamp(0.5rem, 1vw, 2.5rem);
     color: rgb(172, 172, 172);
 }
 
@@ -132,19 +132,19 @@ body {
 
     display: flex;
     flex-direction: row;
+    margin: clamp(0.5rem, 1vw, 3rem);
 }
 
 .informations form group > div {
 
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
     margin-right: 5vw;
 
     font-weight: bold;
     color: rgb(230, 230, 230);
     font-family: 'Titillium Web', sans-serif;
-    font-size: clamp(0.6rem, 2vw, 2.5rem);
+    font-size: clamp(0.6rem, 1vw, 2.5rem);
 }
 
 .informations form input,
