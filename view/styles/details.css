@@ -55,7 +55,7 @@ body {
 .group p {
 
     margin-left: 3rem;
-    font-size: font-size: clamp(1rem, 3vw, 3rem);
+    font-size: clamp(1rem, 3vw, 1.5rem);
     color: rgb(194, 194, 194);
 }
 
