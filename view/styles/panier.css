@@ -1,0 +1,257 @@
+body {
+
+    display: flex;
+}
+
+
+
+.title {
+
+    margin-top: clamp(8rem, 15vh, 10rem);
+    font-family: "Titillium Web", sans-serif;
+    font-size: clamp(30px, 4vw, 200px);
+    font-weight: 700;
+    line-height: 3vw;
+    color: #675396;
+    padding-left: clamp(1rem, 10vw, 10rem);
+    cursor: default;
+}
+
+
+
+
+.cart-list {
+
+    display: flex;
+}
+
+.cart-list ul {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5vh;
+
+    background-color: rgba(0,0,0,0.2);
+
+    border-radius: 20px;
+}
+
+.cart-list li {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 3vh;
+    margin-right: 0;
+    padding: 20px;
+
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-list li:hover {
+
+    transform: scale(1.05);
+}
+
+.cart-list li img {
+
+    height: clamp(50px, 20vw, 300px);
+    margin-bottom: 2vh;
+    border-radius: 10px;
+}
+
+.cart-list li h1 {
+
+    font-size: clamp(0.5rem, 2vw, 2.5rem);
+    color: rgb(172, 172, 172);
+}
+
+.cart-list li h2 {
+
+    font-size: clamp(0.5rem, 3vw, 2rem);
+    color: rgb(212, 212, 212);
+    line-height: 200%;
+    text-transform: uppercase;
+}
+
+.cart-list li h3 {
+
+    font-size: clamp(0.6rem, 2vw, 2.5rem);
+    color: rgb(99, 214, 99);
+}
+
+
+
+
+
+
+.informations {
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.informations p {
+
+
+    font-family: "Titillium Web", sans-serif;
+    font-size: clamp(20px, 2vw, 200px);
+    font-weight: 700;
+    line-height: 3vw;
+    color: #675396;
+    padding-left: clamp(1rem, 10vw, 10rem);
+    cursor: default;
+}
+
+.informations form {
+
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+    margin-top: 4vh;
+
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    width: 90%;
+    border-radius: 20px;
+
+}
+
+.informations form group {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.informations form group > div {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 5vw;
+
+    font-weight: bold;
+    color: rgb(230, 230, 230);
+    font-family: 'Titillium Web', sans-serif;
+    font-size: clamp(0.6rem, 2vw, 2.5rem);
+}
+
+.informations form input,
+.informations form select {
+
+    width: 100%;
+    margin-top: 1rem;
+    height: 30px;
+    padding: 10px 10px;
+    border-radius: 10px;
+
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+
+    outline: none;
+}
+
+.informations form select {
+
+    padding: 5px 10px;
+    width: 150%;
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.informations form option {
+
+    background-color: rgb(54,57,62);
+    color: inherit;
+}
+
+.informations form label {
+
+    padding-left: 0.5rem;
+}
+
+
+
+
+
+
+
+.confirm {
+
+    text-align: center;
+    font-size: clamp(0.8rem, 1.2vw, 3rem);
+    font-family: "Poppins";
+    color: whitesmoke;
+    padding: 1rem;
+    background-color: rgb(55, 149, 55);
+    width: clamp(10rem, 25%, 30rem);
+    border-radius: 20px;
+    box-shadow: 0 0 50px 2px rgba(0,0,0,0.3);
+    align-self: center;
+    margin-bottom: 5vh;
+
+}
+
+/* Transition (lorsque l'on survole le "bouton" avec la souris) prise sur le site : https://ianlunn.github.io/Hover/ */
+
+.confirm {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.confirm:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #d6d6d6;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-radius: 20px;
+}
+.confirm:hover, .confirm:focus, .confirm:active {
+    color: black;
+    border-radius: 20px;
+}
+.confirm:hover:before, .confirm:focus:before, .confirm:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    margin-top: 10vh;
+    margin-top: clamp(8rem, 10vh, 10rem);;
     color: white;
 }
 
@@ -203,10 +203,6 @@ body {
    ============================================================================================================= */
 
 @media (max-width: 724px) {
-
-    .details {
-        margin-top: 20vh;
-    }
 
     .details h1 {
 
