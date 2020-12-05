@@ -2,7 +2,7 @@
                                             GLOBALS
    ============================================================================================================= */
 
-body {
+   body {
 
     display: flex;
     justify-content: center;
@@ -23,16 +23,17 @@ body {
 
     margin-top: clamp(8rem, 10vh, 10rem);;
     color: white;
+
 }
 
 .details h1 {
 
-    font-size: clamp(2rem, 2vw, 3rem);
+    font-size: clamp(1.5rem, 2vw, 3rem);
     line-height: 150%;
     color: rgb(185, 185, 185);
 }
 
-.details h2 { font-size: clamp(1rem, 3vw, 3rem); }
+.details h2 { font-size: clamp(1.5rem, 3vw, 3rem); }
 
 .group {
 
@@ -80,6 +81,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 50px 2px rgba(0,0,0,0.3);
     margin-top: 5vh;
+
 }
 
 /* Transition (lorsque l'on survole le "bouton" avec la souris) prise sur le site : https://ianlunn.github.io/Hover/ */
@@ -132,10 +134,20 @@ body {
                                             COMMENTAIRES
    ============================================================================================================= */
 
+
+.title {
+
+    margin-top: 8vh;
+    font-family: "Titillium Web", sans-serif;
+    font-size: clamp(20px, 1.5vw, 200px);
+    font-weight: 700;
+    color: #675396;
+    cursor: default;
+}
 .comments {
 
     width: 80%;
-    margin-top: 10vh;
+    margin-top: 2vh;
 }
 
 .comments ul li {
@@ -182,20 +194,20 @@ body {
 .add-comment textarea {
 
     width: 40vw;
-    height: 15vh;
+    height: 10vh;
     padding-left: 1.5rem;
     padding-top: 1.5rem;
 
     background-color: rgba(0,0,0,0.15);
     border: none;
 
-    font-size: clamp(1rem, 2vw, 3rem);
+    font-size: clamp(1rem, 1vw, 3rem);
     color: white;
 }
 
 .add-comment textarea:focus { outline: none; }
 
-.add-comment textarea::placeholder { font-size: clamp(1rem, 2vw, 3rem); } 
+.add-comment textarea::placeholder { font-size: clamp(1rem, 1.2vw, 3rem); } 
 
 
 /* ============================================================================================================= 
@@ -204,24 +216,15 @@ body {
 
 @media (max-width: 724px) {
 
-    .details h1 {
-
-        font-size: clamp(1rem, 2vw, 3rem);
-    }
-
-    .group {
-
-        flex-direction: column;
-    }
+    .group { flex-direction: column; }
 
     .group p {
-
         margin-top: 5vh;
+        margin-left: 0;
     }
 
-    .add-to-cart {
-
-        width: 50%;
-    }
+    .add-to-cart {  width: 50%; }
+    
+    .add-comment textarea { width: 80vw; }
     
 }
