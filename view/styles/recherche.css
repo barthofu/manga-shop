@@ -150,12 +150,17 @@ body {
         display: none;
     }
 
-    .results {
+    .results li .left .text span {
+        display: none;
+    }
 
+    .results {
         max-width: 100%;
     }
 
-    .results li .left img { height: clamp(100px, 10vw, 300px); }
+    .results li .left img { 
+        height: clamp(100px, 10vw, 300px); 
+    }
 
 }
 
