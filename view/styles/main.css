@@ -2,6 +2,7 @@
                                                 GLOBAL
    ============================================================================================================= */
 
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
 @font-face { font-family: "Poppins"; src: url("../assets/Poppins-Bold.ttf") format("truetype"); }
 @font-face { font-family: "PoppinsExtraLight"; src: url("../assets/Poppins-ExtraLight.ttf") format("truetype"); }
@@ -25,6 +26,7 @@ body {
                                                 NAVBAR
    ============================================================================================================= */
 
+
 /* navbar général */
 
 nav {
@@ -41,9 +43,7 @@ nav {
     background: rgb(47, 32, 80);
 }
 
-
 /* Partie gauche du nav */
-
 
 nav .left {
 
@@ -66,7 +66,6 @@ nav .left h1:hover { color: white; }
 
 
 /* Partie droite du nav */
-
 
 nav .right {
 
@@ -156,9 +155,11 @@ nav .right .nav-about {
 
 nav .right .nav-about:hover { color: white; }
 
+
 /* ============================================================================================================= 
                                             RESPONSIVE
    ============================================================================================================= */
+
 
 @media (max-width: 560px) {
 
@@ -172,6 +173,7 @@ nav .right .nav-about:hover { color: white; }
         margin-left: -0.5rem;
     }
 }
+
 
 /* ============================================================================================================= 
                                             SCROLLBAR

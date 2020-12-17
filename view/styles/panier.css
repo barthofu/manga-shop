@@ -1,11 +1,9 @@
-body {
-
-    display: flex;
-}
-
+/* ============================================================================================================= 
+                                            CART LIST
+   ============================================================================================================= */
 
 
-.title {
+.title h2 {
 
     margin-top: clamp(8rem, 15vh, 10rem);
     font-family: "Titillium Web", sans-serif;
@@ -16,9 +14,6 @@ body {
     padding-left: clamp(1rem, 10vw, 10rem);
     cursor: default;
 }
-
-
-
 
 .cart-list {
 
@@ -90,8 +85,9 @@ body {
 }
 
 
-
-
+/* ============================================================================================================= 
+                                            INFORMATIONS
+   ============================================================================================================= */
 
 
 .informations {
@@ -100,7 +96,7 @@ body {
     margin-bottom: 5vh;
 }
 
-.informations p {
+.informations h2 {
 
 
     font-family: "Titillium Web", sans-serif;
@@ -128,14 +124,14 @@ body {
 
 }
 
-.informations form group {
+.informations form .group {
 
     display: flex;
     flex-direction: row;
     margin: clamp(0.5rem, 1vw, 3rem);
 }
 
-.informations form group > div {
+.informations form .group > div {
 
     display: flex;
     flex-direction: column;
@@ -183,9 +179,9 @@ body {
 }
 
 
-
-
-
+/* ============================================================================================================= 
+                                            CONFIRM CART
+   ============================================================================================================= */
 
 
 .confirm {
@@ -248,10 +244,3 @@ body {
     transform: scaleY(1);
     border-radius: 20px;
 }
-
-
-
-
-
-
-
