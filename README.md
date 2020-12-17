@@ -6,9 +6,9 @@ Projet Web du S1.
 Faire un site maquette individuel.
 - Ce site doit être une maquette de site marchand.
 - Le site sera totalement statique: pas de PHP ou de JS.  
-- Délai pour la réalisation du projet : un peu plus d'un moins (à rendre le 13 janvier au plus tard)
+- Délai pour la réalisation du projet : un peu plus d'un moins (à rendre le 13 janvier au plus tard).
 
-[Lien](https://i.imgur.com/lCI8Uxt.png) vers consignes plus détaillées du projet  
+[Lien](https://i.imgur.com/lCI8Uxt.png) vers les consignes plus détaillées du projet.
 
 ## Organisation des dossiers
 - `view`: fichiers sources de l'unique partie front-end du projet (pas de back-end au vu des consignes données)

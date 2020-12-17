@@ -185,8 +185,8 @@
         width: clamp(300px, 40vw, 1500px);
     }
 
-    header .right .nav-about,
-    header .right .separator:nth-child(4) {
+    nav .right .nav-about,
+    nav .right .separator:nth-child(4) {
         display: none;
     }
 }

@@ -1,6 +1,6 @@
 @media (max-width: 720px) {
 
-    header {
+    nav {
 
         display: flex;
         flex-direction: column;
@@ -10,17 +10,17 @@
         transition: 0.3s ease-in-out;
     }
 
-    header form {
+    nav form {
 
         margin-top: 2vh;
     }
 
-    header .left {
+    nav .left {
         display: flex;
         flex-direction: row;
     }
 
-    header .left img {
+    nav .left img {
         width: 0px
     }
 
@@ -28,6 +28,6 @@
 
 @media (max-width: 335px) {
 
-    header .left h1 { font-size: 1rem; }
+    nav .left h1 { font-size: 1rem; }
     
 }
