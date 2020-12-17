@@ -116,11 +116,12 @@
     color: #635899;
 }
 
-.about h2 {
+.about p {
 
-    font-family: "Titillium Web", sans-serif;
-    color: #cecece;
-    font-size: clamp(20px, 2vw, 150px);
+    color : #cecece;
+    font-family: "Titillium Web";
+    font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 /* ============================================================================================================= 
