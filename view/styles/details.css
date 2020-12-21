@@ -2,12 +2,14 @@
                                             GLOBALS
    ============================================================================================================= */
 
-   body {
+
+body {
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 /* ============================================================================================================= 
                                             DETAILS DE L'ARTICLE
@@ -21,7 +23,7 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: clamp(8rem, 10vh, 10rem);;
+    margin-top: 10rem;
     color: white;
 
 }
