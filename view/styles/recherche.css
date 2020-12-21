@@ -144,13 +144,8 @@ body {
 
 
 
+/* Transition (lorsque l'on survole le "bouton" avec la souris) prise sur le site : https://ianlunn.github.io/Hover/ */
 
-
-
-
-
-
-/* Sweep To Right */
 .result {
     display: inline-block;
     vertical-align: middle;
@@ -195,16 +190,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-/* RESPONSIVE */
+/* ============================================================================================================= 
+                                            RESPONSIVE
+   ============================================================================================================= */
 
 @media (max-width: 768px) {
 
