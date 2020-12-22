@@ -53,10 +53,12 @@ body {
     min-height: 100px;
     border-radius: 10px;
     box-shadow: 0 0 60px 1px rgba(0,0,0,0.3);
+    animation: sizeIn 0.8s ease-in-out;
 }
 
 .group p {
 
+    animation: slideIn 1s ease-in-out;
     margin-left: 3rem;
     font-size: clamp(0.6rem, 3vw, 1.3rem);
     color: rgb(194, 194, 194);
@@ -236,4 +238,24 @@ body {
     
     .add-comment textarea { width: 80vw; }
     
+}
+
+
+/* ============================================================================================================= 
+                                            ANIMATIONS
+   ============================================================================================================= */
+
+   
+@keyframes sizeIn {
+
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
 }

@@ -16,8 +16,8 @@
 .banner {
 
     height: 100vh;
+    
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
@@ -29,6 +29,8 @@
 }
 
 .banner h1 {
+
+    animation: slideIn 1s ease-in-out;
 
     font-family: "Titillium Web", sans-serif;
     font-size: clamp(30px, 5vw, 200px);
@@ -51,11 +53,14 @@
 
 .last-releases ul {
 
+    animation: slideIn 1s ease-in-out;
     width: clamp(500px, 40vw, 1500px);
     display: flex;
 }
 
-.last-releases li { width: 100%; }
+.last-releases li { 
+    width: 100%; 
+}
 
 .last-releases li img {
 
@@ -89,7 +94,6 @@
     color: rgb(255, 255, 255, 0.3);
     font-family: "PoppinsExtraLight";
 }
-
 
 /* ============================================================================================================= 
                                             ABOUT
@@ -196,5 +200,22 @@
 
     .about p {
         font-size: 0.7rem;
+    }
+}
+
+/* ============================================================================================================= 
+                                            ANIMATIONS
+   ============================================================================================================= */
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
