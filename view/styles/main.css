@@ -175,9 +175,6 @@ nav .right .nav-about:hover { color: white; }
         margin-top: 0.7rem;
         margin-left: -0.5rem;
     }
-}
-
-@media (max-width: 425px) {
 
     nav .right .nav-about,
     nav .right .separator:nth-child(4) {

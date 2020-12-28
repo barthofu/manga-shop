@@ -72,6 +72,7 @@ body {
 .results {
 
     max-width: 80vw;
+    margin-bottom: 10vh;
 }
 
 .results ul {

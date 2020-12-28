@@ -163,7 +163,7 @@ body {
     border-radius: 20px;
 }
 
-.comments ul li h1 {
+.comments ul li h3 {
 
     font-size: clamp(1rem, 4vw, 1.5rem);
     line-height: 200%;

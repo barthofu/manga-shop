@@ -9,37 +9,78 @@
 
 
 /* ============================================================================================================= 
-                                            LAST RELEASES
+                                            BANNIÈRE
    ============================================================================================================= */
 
 
 .banner {
 
     height: 100vh;
-    
+    margin-top: -5vh;
+    padding: 0 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.banner h1,
-.banner .last-releases {
 
-    margin: 3%;
+/* Welcome message */
+
+
+.line {
+
+    width: 0;
+    height: 10px;
+    background: #3A3166;
+    margin-bottom: 5vh;
+    border-radius: 40px;
+
+    animation: enlarge 0.8s ease-in-out forwards;
 }
 
 .banner h1 {
 
     animation: slideIn 1s ease-in-out;
 
+    font-family: "PoppinsExtraLight", sans-serif;
+    font-size: clamp(20px, 2.5vw, 200px);
+    line-height: clamp(1.5rem, 3.5vw, 5rem);
+    color: #93929b;
+    text-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+
+
+    margin-bottom: 7vh;
+}
+
+.banner h1 i {
+
+    font-style: normal;
+    color: #4F438C;
+    font-family: "Poppins";
+}
+
+
+/* Last release */
+
+.banner h2,
+.last-releases {
+
+    margin: 3%;
+}
+
+.banner h2 {
+
+    animation: slideIn 1s ease-in-out;
+
     font-family: "Titillium Web", sans-serif;
-    font-size: clamp(30px, 5vw, 200px);
+    font-size: clamp(30px, 4vw, 200px);
     font-weight: 700;
     line-height: clamp(2.5rem, 4vw, 5rem);
     color: #3A3166;
     text-shadow: 0px 0px 30px rgba(0,0,0,0.05);
+    text-align: center;
 
-    width: 22%;
+    margin-bottom: 7vh;
 }
 
 /* Dernières sorties */
@@ -115,7 +156,7 @@
     color: white;
 }
 
-.about h1 {
+.about h2 {
 
     font-family: "Titillium Web", sans-serif;
     font-size: clamp(30px, 5vw, 200px);
@@ -123,7 +164,7 @@
     color: #635899;
 }
 
-.about h2 {
+.about h3 {
 
     font-family: "Titillium Web", sans-serif;
     font-size: clamp(15px, 2vw, 100px);
@@ -131,7 +172,7 @@
     color: #635899;
 }
 
-.about h3 {
+.about > div > p {
 
     font-family: "Titillium Web", sans-serif;
     font-size: clamp(15px, 1.2vw, 100px);
@@ -139,7 +180,7 @@
     color: rgb(175, 175, 175);
 }
 
-.about p,
+.about > p,
 .about > div li {
 
     color : #cecece;
@@ -201,6 +242,13 @@
     .banner {
 
         flex-direction: column;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .line {
+
+        display:none;
     }
 
     .banner h1 {
@@ -216,16 +264,22 @@
 
 @media (max-width: 425px) {
 
+    .banner {
+
+        margin-top: 3rem;
+    }
+
     .last-releases ul {
         width: clamp(300px, 40vw, 1500px);
     }
+    
 
     .about {
         height: 80vh;
         margin-bottom: 5vh;
     }
 
-    .about p,
+    .about > p,
     .about > div li {
         font-size: 0.7rem;
     }
@@ -249,5 +303,21 @@
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@keyframes enlarge {
+
+    0% {
+        width: 0;
+    }
+
+    60% {
+
+        width:12rem;
+    }
+
+    100% {
+        width: 10rem;
     }
 }
