@@ -105,11 +105,11 @@
     text-align: center;
     height: 100vh;
     width: 70vw;
-    align-self: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
     flex-direction: column;
 
     color: white;
@@ -123,12 +123,39 @@
     color: #635899;
 }
 
-.about p {
+.about h2 {
+
+    font-family: "Titillium Web", sans-serif;
+    font-size: clamp(15px, 2vw, 100px);
+    font-weight: 700;
+    color: #635899;
+}
+
+.about h3 {
+
+    font-family: "Titillium Web", sans-serif;
+    font-size: clamp(15px, 1.2vw, 100px);
+    font-weight: 700;
+    color: rgb(175, 175, 175);
+}
+
+.about p,
+.about > div li {
 
     color : #cecece;
     font-family: "Titillium Web";
     font-size: 1.2rem;
 }
+
+.about > div {
+
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
 
 
 /* ============================================================================================================= 
@@ -198,8 +225,18 @@
         display: none;
     }
 
-    .about p {
+    .about {
+        height: 80vh;
+        margin-bottom: 5vh;
+    }
+
+    .about p,
+    .about > div li {
         font-size: 0.7rem;
+    }
+
+    .custom-shape-divider svg {
+        height: 60px;
     }
 }
 

@@ -24,7 +24,7 @@ body {
     align-items: center;
 
     margin-top: 10rem;
-    color: white;
+    color: #ffffff;
 
 }
 
@@ -211,6 +211,7 @@ body {
 
     background-color: rgba(0,0,0,0.15);
     border: none;
+    border-radius: 20px;
 
     font-size: clamp(1rem, 1vw, 3rem);
     color: white;
