@@ -20,7 +20,7 @@ Faire un site maquette individuel.
 ## À propos
 Manga Shop est un site marchand vendant des mangas.
 Il est composé de 4 pages :
-- la `page d'accueuil` qui contient un affichage des dernières sorties ainsi que la section "à propos" du site.
+- la `page d'accueuil` qui contient un message de bienvenue, un affichage des dernières sorties ainsi que la section "à propos" du site.
 - les `résultats` liés à une recherche (affichage des produits).
 - la `page détaillée` d'un manga (fiche de produit) avec des commentaires.
 - le `panier` contenant la liste des articles présents dans ce dernier ainsi qu'un formulaire concernant les informations de livraison.
