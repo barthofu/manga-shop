@@ -161,12 +161,15 @@ nav .right .nav-about:hover { color: white; }
    ============================================================================================================= */
 
 
-@media (max-width: 560px) {
+@media (max-width: 768px) {
 
     nav .right form input[type="text"]:hover,
     nav .right form input[type="text"]:focus {
         width: 10rem;
     }
+}
+
+@media (max-width: 560px) {
 
     nav .right img {
         margin-top: 0.7rem;
@@ -174,6 +177,13 @@ nav .right .nav-about:hover { color: white; }
     }
 }
 
+@media (max-width: 425px) {
+
+    nav .right .nav-about,
+    nav .right .separator:nth-child(4) {
+        display: none;
+    }
+}
 
 /* ============================================================================================================= 
                                             SCROLLBAR

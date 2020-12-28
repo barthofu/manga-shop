@@ -220,11 +220,6 @@
         width: clamp(300px, 40vw, 1500px);
     }
 
-    nav .right .nav-about,
-    nav .right .separator:nth-child(4) {
-        display: none;
-    }
-
     .about {
         height: 80vh;
         margin-bottom: 5vh;
