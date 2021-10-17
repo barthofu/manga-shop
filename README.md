@@ -29,5 +29,5 @@ Une barre de navigation est également présente sur chaque page et contient le 
 À noter que le le logo et le bouton "À propos" disparaissent en affichage mobile afin d'alléger la barre de navigation.
 
 ## Accéder au site
-Le site web est disponible à l'adresse <https://mangashop.barthofu.me> (aussi disponible en hébergemnt page sur github à [cette adresse](https://barthofu.github.io/manga-shop/)).
+Le site web est disponible à l'adresse <https://mangashop.barthofu.com> (aussi disponible en hébergemnt page sur github à [cette adresse](https://barthofu.github.io/manga-shop/)).
 
